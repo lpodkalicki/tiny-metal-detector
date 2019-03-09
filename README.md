@@ -1,2 +1,2 @@
-# TinyPi
-ATtiny13 based Pi Metal Detector
+# Tiny Metal Detector
+ATtiny13 based PI (Pulse Induction) Metal Detector
