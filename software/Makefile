@@ -17,7 +17,7 @@ TARGET=main
 SRCS = main.c
 
 all:
-	${CC} ${CFLAGS} -o ${TARGET}.o ${SRCS}
+	${CC} -c ${CFLAGS} -o ${TARGET}.o ${SRCS}
 	${LD} -o ${TARGET}.elf ${TARGET}.o
 	${OBJCOPY} -j .text -j .data -O ihex ${TARGET}.o ${TARGET}.hex
 	${SIZE} -C --mcu=${MCU} ${TARGET}.elf
